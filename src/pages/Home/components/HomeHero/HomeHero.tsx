@@ -95,6 +95,17 @@ export const HomeHero = () => {
 
             <ArrowUpRightIcon />
           </a>
+
+          <a
+            href="/template"
+            className={styles.heroSectionTopDocButton}
+          >
+            <span className={styles.heroSectionTopDocButtonText}>
+              View Template
+            </span>
+
+            <ArrowUpRightIcon />
+          </a>
         </div>
       </div>
 

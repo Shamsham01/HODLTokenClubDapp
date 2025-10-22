@@ -66,12 +66,6 @@ export const Header = () => {
 
   const headerBrowseButtons: HeaderBrowseButtonType[] = [
     {
-      label: 'GitHub',
-      handleClick: handleGitHubBrowsing,
-      icon: faGithub as IconDefinition,
-      isVisible: true
-    },
-    {
       label: 'Notifications',
       handleClick: handleNotificationsBrowsing,
       icon: faBell,

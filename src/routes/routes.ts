@@ -1,5 +1,5 @@
 import { RouteNamesEnum } from 'localConstants';
-import { Dashboard, Disclaimer, Home, Unlock } from 'pages';
+import { Dashboard, Disclaimer, Home, HodlLanding, Unlock } from 'pages';
 import { RouteType } from 'types';
 
 interface RouteWithTitleType extends RouteType {
@@ -11,8 +11,8 @@ interface RouteWithTitleType extends RouteType {
 export const routes: RouteWithTitleType[] = [
   {
     path: RouteNamesEnum.home,
-    title: 'Home',
-    component: Home,
+    title: 'HODL Token Club',
+    component: HodlLanding,
     children: [
       {
         path: RouteNamesEnum.unlock,
@@ -20,6 +20,11 @@ export const routes: RouteWithTitleType[] = [
         component: Unlock
       }
     ]
+  },
+  {
+    path: '/template',
+    title: 'Template',
+    component: Home
   },
   {
     path: RouteNamesEnum.dashboard,

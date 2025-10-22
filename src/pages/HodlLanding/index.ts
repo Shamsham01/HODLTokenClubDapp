@@ -1,0 +1,1 @@
+export { HodlLanding } from './HodlLanding';

@@ -26,3 +26,43 @@
 * {
   font-family: 'Satoshi', sans-serif;
 }
+
+/* 3D Flip Card Styles */
+.token-card {
+  perspective: 1000px;
+}
+
+.token-card-inner {
+  transform-style: preserve-3d;
+}
+
+.token-card-flipped .token-card-inner {
+  transform: rotateY(180deg);
+}
+
+.token-card-front,
+.token-card-back {
+  backface-visibility: hidden;
+}
+
+.token-card-back {
+  transform: rotateY(180deg);
+}
+
+/* NFT Carousel Styles */
+.carousel-button:first-child {
+  left: -20px;
+}
+
+.carousel-button:last-child {
+  right: -20px;
+}
+
+/* Video Carousel Styles */
+.video-button:first-child {
+  left: -20px;
+}
+
+.video-button:last-child {
+  right: -20px;
+}

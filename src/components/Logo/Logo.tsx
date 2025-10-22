@@ -17,8 +17,11 @@ interface LogoPropsType {
 export const Logo = ({ hideTextOnMobile }: LogoPropsType) => (
   <div className={styles.logo}>
     <div className={styles.logoIcon}>
-      <div className={styles.logoIconEmpty} />
-      <div className={styles.logoIconFilled} />
+      <img 
+        src="https://i.ibb.co/Gf3HkSTm/Hodl-Token200x200-1.png" 
+        alt="HODL Token" 
+        className="w-8 h-8 rounded-full object-cover"
+      />
     </div>
 
     <div
@@ -26,7 +29,7 @@ export const Logo = ({ hideTextOnMobile }: LogoPropsType) => (
         [styles.logoTextHidden]: hideTextOnMobile
       })}
     >
-      dApp Template
+      HODL Token Club
     </div>
   </div>
 );
