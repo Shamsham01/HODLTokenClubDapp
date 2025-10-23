@@ -1,4 +1,5 @@
 export * from './BatchTransactions';
+export * from './GalacticHodlerNft';
 export * from './NativeAuth';
 export * from './PingPongAbi';
 export * from './PingPongRaw';

@@ -40,18 +40,11 @@ export const HodlMakeX = () => {
             </div>
 
             <div className={styles.infoCard}>
-              <h3 className={styles.infoTitle}>Token Utility & Installation</h3>
+              <h3 className={styles.infoTitle}>Token Utility</h3>
               <p className={styles.infoText}>
                 <strong>Usage Fee:</strong> $0.03 per operation in REWARD tokens<br/>
                 <strong>Network Effects:</strong> Drives token demand and expands HODL Token Club exposure<br/>
-                <strong>Installation:</strong> Install via <a href="https://linktr.ee/makex_web3" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">MakeX Linktree</a> on <a href="https://www.make.com/en/login" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Make.com</a>
-              </p>
-            </div>
-
-            <div className={styles.infoCard}>
-              <h3 className={styles.infoTitle}>Marketplace Potential</h3>
-              <p className={styles.infoText}>
-                By enabling template sales as Data NFTs, we amplify token utility and builder incentives. The platform creates a sustainable ecosystem where developers can monetize their automation workflows while driving demand for REWARD tokens.
+                <strong>Marketplace:</strong> Template sales as Data NFTs amplify token utility and builder incentives
               </p>
             </div>
           </div>
@@ -69,6 +62,81 @@ export const HodlMakeX = () => {
                 controlsList="nodownload nofullscreen noremoteplayback"
                 disablePictureInPicture
               />
+            </div>
+
+            {/* Installation Links */}
+            <div className={styles.installationSection}>
+              <h3 className={styles.installationTitle}>Install MakeX Apps</h3>
+              <div className={styles.installationGrid}>
+                <a 
+                  href="https://eu2.make.com/app/invite/682839e9c23f1ba1aeb9925e16551466" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={styles.installationCard}
+                >
+                  <div className={styles.appLogo}>
+                    <img 
+                      src="https://i.ibb.co/8nFjZp3g/ESDT-1.png" 
+                      alt="Snapshot & Draw Apps" 
+                      className={styles.logoImage}
+                    />
+                  </div>
+                  <div className={styles.appInfo}>
+                    <h4 className={styles.appName}>Snapshot & Draw Apps</h4>
+                    <p className={styles.appDescription}>NFT/SFT/ESDT snapshotting and random draws</p>
+                    <div className={styles.installButton}>
+                      <span className={styles.installText}>Install App</span>
+                      <span className={styles.installIcon}>→</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a 
+                  href="https://eu2.make.com/app/invite/db68efb5e85d04d711a632a3b2017b7d" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={styles.installationCard}
+                >
+                  <div className={styles.appLogo}>
+                    <img 
+                      src="https://i.ibb.co/TBf79Q0B/Multivers-X-Transfers.png" 
+                      alt="MultiversX Transfers" 
+                      className={styles.logoImage}
+                    />
+                  </div>
+                  <div className={styles.appInfo}>
+                    <h4 className={styles.appName}>MultiversX Transfers</h4>
+                    <p className={styles.appDescription}>Asset transfers, bulk airdrops, and free minting</p>
+                    <div className={styles.installButton}>
+                      <span className={styles.installText}>Install App</span>
+                      <span className={styles.installIcon}>→</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a 
+                  href="https://eu2.make.com/app/invite/113f288efa442e5a2529b09e3dbe4339" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={styles.installationCard}
+                >
+                  <div className={styles.appLogo}>
+                    <img 
+                      src="https://i.ibb.co/NgfrGqmr/Warps.png" 
+                      alt="Warps" 
+                      className={styles.logoImage}
+                    />
+                  </div>
+                  <div className={styles.appInfo}>
+                    <h4 className={styles.appName}>Warps</h4>
+                    <p className={styles.appDescription}>Execute smart contract and blockchain operations</p>
+                    <div className={styles.installButton}>
+                      <span className={styles.installText}>Install App</span>
+                      <span className={styles.installIcon}>→</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>

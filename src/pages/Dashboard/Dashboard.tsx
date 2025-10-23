@@ -7,6 +7,7 @@ import { WidgetType } from 'types/widget.types';
 import { DashboardHeader, LeftPanel, Widget } from './components';
 import {
   BatchTransactions,
+  // GalacticHodlerNft, // Temporarily disabled due to Warp conflicts
   NativeAuth,
   PingPongAbi,
   PingPongRaw,
@@ -17,6 +18,14 @@ import {
 import styles from './dashboard.styles';
 
 const dashboardWidgets: WidgetType[] = [
+  // Temporarily disabled due to Warp integration conflicts
+  // {
+  //   title: 'Galactic Hodler NFT',
+  //   widget: GalacticHodlerNft,
+  //   description:
+  //     'Purchase Galactic Hodler NFT for 25,000 $REWARD tokens using Warps',
+  //   reference: 'https://usewarp.to/buy-ghnft-with-reward'
+  // },
   {
     title: 'Ping & Pong (Manual)',
     widget: PingPongRaw,

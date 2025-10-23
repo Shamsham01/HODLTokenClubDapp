@@ -1,18 +1,13 @@
 import { MouseEvent } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { ReactComponent as ArrowUpRightIcon } from 'assets/icons/arrow-up-right-icon.svg';
 
 import { Button } from 'components';
-import { RouteNamesEnum } from 'localConstants';
 
 import styles from './hodlCallToAction.styles';
 
 export const HodlCallToAction = () => {
-  const navigate = useNavigate();
-
   const handleJoinMovement = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    navigate(RouteNamesEnum.unlock);
+    window.open('https://discord.gg/RBtGMjwTDw', '_blank');
   };
 
   const handleLearnMore = (event: MouseEvent<HTMLButtonElement>) => {
@@ -34,11 +29,9 @@ export const HodlCallToAction = () => {
         <div className={styles.ctaButtons}>
           <Button onClick={handleJoinMovement} className={styles.primaryButton}>
             Join the Movement
-            <ArrowUpRightIcon className={styles.buttonIcon} />
           </Button>
           <Button onClick={handleLearnMore} className={styles.secondaryButton}>
             Read Litepaper
-            <ArrowUpRightIcon className={styles.buttonIcon} />
           </Button>
         </div>
 
@@ -57,11 +50,6 @@ export const HodlCallToAction = () => {
           </div>
         </div>
 
-        <div className={styles.templateLink}>
-          <a href="/template" className={styles.templateLinkText}>
-            Built with MultiversX dApp Template
-          </a>
-        </div>
       </div>
     </section>
   );

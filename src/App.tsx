@@ -5,6 +5,7 @@ import { routes } from 'routes';
 import { AxiosInterceptors, BatchTransactionsContextProvider } from 'wrappers';
 
 import { Layout } from './components';
+// import { WarpsProvider, WarpDetector } from './components/Warps'; // Temporarily disabled
 
 export const App = () => {
   return (

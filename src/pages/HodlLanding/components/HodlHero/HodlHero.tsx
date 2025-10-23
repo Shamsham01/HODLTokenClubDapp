@@ -20,12 +20,20 @@ export const HodlHero = () => {
   };
 
   return (
-    <div 
-      className={styles.heroContainer}
-      style={{
-        backgroundImage: 'url(https://i.ibb.co/5xB2Qz8b/Banner-OOX-1920x800.jpg)'
-      }}
-    >
+    <div className={styles.heroContainer}>
+      {/* Video Background */}
+      <video
+        className={styles.heroVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        controlsList="nodownload nofullscreen noremoteplayback"
+        disablePictureInPicture
+      >
+        <source src="https://media.multiversx.com/nfts/asset/bafybeieywmrowxw2wj2rnlybktm634ncozqyhddn7y2zrlt6zptvfh2fmy/TeaserEmpyrean.mp4" type="video/mp4" />
+      </video>
+      
       <div className={styles.heroContent}>
         <div className={styles.heroText}>
           <h1 className={styles.heroTitle}>

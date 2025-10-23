@@ -8,7 +8,7 @@ export default {
   tokensGrid: 'tokens-grid grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8',
   
   // Token Card Flip Styles
-  tokenCard: 'token-card bg-primary/5 border border-secondary/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 hover:bg-primary/10 hover:border-secondary/40 transition-all duration-200 ease-out cursor-pointer relative min-h-[350px] sm:h-[400px] lg:h-[400px]',
+  tokenCard: 'token-card bg-primary/5 border border-secondary/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 hover:bg-primary/10 hover:border-secondary/40 transition-all duration-200 ease-out cursor-pointer relative min-h-[380px] sm:h-[450px] lg:h-[450px]',
   tokenCardFlipped: 'token-card-flipped',
   tokenCardInner: 'token-card-inner relative w-full h-full text-center transition-transform duration-700 ease-in-out',
   tokenCardFront: 'token-card-front absolute inset-0 backface-hidden flex flex-col items-center justify-center p-2 sm:p-4 lg:p-0',
