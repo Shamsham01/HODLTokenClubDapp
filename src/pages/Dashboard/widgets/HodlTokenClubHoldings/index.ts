@@ -1,0 +1,1 @@
+export { HodlTokenClubHoldings } from './HodlTokenClubHoldings';

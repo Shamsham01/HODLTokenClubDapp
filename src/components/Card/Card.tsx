@@ -29,12 +29,16 @@ export const Card = ({
   'data-testid': dataTestId
 }: CardPropsType) => (
   <div id={anchor} className={styles.cardContainer} data-testid={dataTestId}>
-    <h2 className={styles.cardTitle}>
-      {title}
-      <a href={reference} target='_blank' className={styles.cardRef}>
-        <FontAwesomeIcon icon={faInfoCircle} className={styles.cardRefIcon} />
-      </a>
-    </h2>
+    {title && (
+      <h2 className={styles.cardTitle}>
+        {title}
+        {reference && (
+          <a href={reference} target='_blank' className={styles.cardRef}>
+            <FontAwesomeIcon icon={faInfoCircle} className={styles.cardRefIcon} />
+          </a>
+        )}
+      </h2>
+    )}
 
     {description && <p className={styles.cardDescription}>{description}</p>}
     {children}
