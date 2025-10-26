@@ -10,14 +10,25 @@ const getUserProfileData = async (address?: string) => {
   }
 
   try {
-    console.log('Fetching profile data for address:', address);
-    console.log('API URL:', `${ID_API_URL}${USERS_API_URL}${address}`);
-    const { data } = await axios.get(`${USERS_API_URL}${address}`, {
-      baseURL: ID_API_URL
-    });
-
-    console.log('Profile data received:', data);
-    return data;
+    // Try Netlify function first (for production), fallback to direct API (for localhost)
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    let url;
+    
+    if (isLocalhost) {
+      // Use direct API on localhost
+      url = `${ID_API_URL}${USERS_API_URL}${address}`;
+      console.log('Using direct API (localhost):', url);
+      const { data } = await axios.get(`${USERS_API_URL}${address}`, {
+        baseURL: ID_API_URL
+      });
+      return data;
+    } else {
+      // Use Netlify function on production
+      url = `/.netlify/functions/get-user-profile?address=${address}`;
+      console.log('Using Netlify function:', url);
+      const { data } = await axios.get(url);
+      return data;
+    }
   } catch (err) {
     console.error('Unable to fetch profile url', err);
   }
