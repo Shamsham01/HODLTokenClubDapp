@@ -10,13 +10,16 @@ const getUserProfileData = async (address?: string) => {
   }
 
   try {
+    console.log('Fetching profile data for address:', address);
+    console.log('API URL:', `${ID_API_URL}${USERS_API_URL}${address}`);
     const { data } = await axios.get(`${USERS_API_URL}${address}`, {
       baseURL: ID_API_URL
     });
 
+    console.log('Profile data received:', data);
     return data;
   } catch (err) {
-    console.error('Unable to fetch profile url');
+    console.error('Unable to fetch profile url', err);
   }
 };
 
